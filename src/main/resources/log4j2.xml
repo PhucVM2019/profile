@@ -11,9 +11,9 @@
                      filePattern="${log-path}/app-%d{yyyy-MM-dd-HH-mm}.log">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
             <Policies>
-                <SizeBasedTriggeringPolicy size="10MB" />
+                <SizeBasedTriggeringPolicy size="30MB" />
             </Policies>
-            <DefaultRolloverStrategy max="10" />
+            <DefaultRolloverStrategy max="30" />
         </RollingFile>
     </Appenders>
     <Loggers>

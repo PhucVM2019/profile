@@ -23,12 +23,13 @@ public class DatabaseConnectionTest implements InitializingBean {
 
 	@Override
 	public void afterPropertiesSet() throws Exception  {
-		log.info("BEGIN CHECK CONNECT TO DATABASE");
+		log.info("BEGIN CHECK CONNECT TO DATABASE MYSQL");
 		try (Connection connection = dataSource.getConnection()) {
 			log.info("Connected to the database successfully!");
 		} catch (SQLException e) {
 			log.error("Failed to connect to the database: " + e.getMessage());
 		}
+		log.info("END CHECK CONNECT TO DATABASE MYSQL");
 	}
 
 }

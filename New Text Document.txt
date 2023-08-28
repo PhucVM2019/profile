@@ -1,0 +1,17 @@
+-- cau hinh thu muc luu image
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+ "data-root": "D:\\Docker\\Images",
+  "experimental": false
+}
+
+-- kiểm tra
+
+docker info
+tìm dòng
+Docker Root Dir: D:\docker\images
